@@ -7,7 +7,7 @@ from google import genai
 from google.genai import errors as genai_errors
 
 APP_NAME = "IRONPLAN AI"
-MODEL_NAME = "gemini-3.6-flash"
+MODEL_NAME = "gemini-3.5-flash"
 
 st.set_page_config(
     page_title="IRONPLAN AI | Workout Planner",
