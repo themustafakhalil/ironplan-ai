@@ -247,8 +247,6 @@ with st.form("workout_form", clear_on_submit=False):
 if submitted:
     if not equipment:
         st.error("Please select at least one piece of available equipment.")
-    elif location == "Home" and "Bodyweight only" in equipment and len(equipment) > 1:
-        st.warning("You selected Bodyweight only along with other equipment. The plan will consider all selected options.")
     elif needs_professional_guidance(limitations):
         st.warning(
             "Your note may describe an injury, significant pain, or a medical restriction. "
